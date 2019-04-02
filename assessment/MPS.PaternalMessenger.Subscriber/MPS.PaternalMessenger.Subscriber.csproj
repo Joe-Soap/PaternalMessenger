@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>MPS.PaternalMessenger.Subscriber</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>MPS.PaternalMessenger.Subscriber</PackageId>
+    <RuntimeFrameworkVersion>2.2.2</RuntimeFrameworkVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>MPS.PaternalMessenger.Subscriber</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="rawrabbit.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MPS.PaternalMessenger.Messages\MPS.PaternalMessenger.Messages.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="RawRabbit" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Attributes" Version="1.10.4" />
+    <PackageReference Include="RawRabbit.DependencyInjection.Autofac" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.DependencyInjection.Ninject" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.Attributes" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.GlobalExecutionId" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext.Subscribe" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.Polly" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Extensions" Version="1.10.4" />
+    <PackageReference Include="RawRabbit.Logging.NLog" Version="2.0.0-beta7" />
+    <PackageReference Include="RawRabbit.Logging.Serilog" Version="2.0.0-beta7" />
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Request" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Respond" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.StateMachine" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Tools" Version="2.0.0-rc5" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.1-dev-00044" />
+  </ItemGroup>
+
+</Project>

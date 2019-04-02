@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.5;net451</TargetFrameworks>
+    <AssemblyName>MPS.PaternalMessenger.Messages</AssemblyName>
+    <PackageId>MPS.PaternalMessenger.Messages</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <Authors>MPS.PaternalMessenger.Messages</Authors>
+    <RootNamespace>MPS.PaternalMessenger.Messages</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RawRabbit" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Attributes" Version="1.10.4" />
+    <PackageReference Include="RawRabbit.DependencyInjection.Autofac" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.DependencyInjection.Ninject" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.Attributes" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.GlobalExecutionId" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext.Subscribe" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Enrichers.Polly" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Extensions" Version="1.10.4" />
+    <PackageReference Include="RawRabbit.Logging.NLog" Version="2.0.0-beta7" />
+    <PackageReference Include="RawRabbit.Logging.Serilog" Version="2.0.0-beta7" />
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Request" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Respond" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.StateMachine" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Tools" Version="2.0.0-rc5" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.1-dev-00044" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
